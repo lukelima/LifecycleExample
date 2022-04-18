@@ -23,7 +23,7 @@ namespace LifecycleExample.Controllers
         {
             var id1 = _singletonService.ShowId();
             var id2 = singletonService2.ShowId();
-            var result = $"Controller: {id1}\nAção: {id2}";
+            var result = $"Controller: {id1}\nRota: {id2}";
             return Ok(result);
         }
 
@@ -32,7 +32,7 @@ namespace LifecycleExample.Controllers
         {
             var id1 = _scopedService.ShowId();
             var id2 = scopedService2.ShowId();
-            var result = $"Controller: {id1}\nAção: {id2}";
+            var result = $"Controller: {id1}\nRota: {id2}";
             return Ok(result);
         }
 
@@ -41,7 +41,7 @@ namespace LifecycleExample.Controllers
         {
             var id1 = _transientService.ShowId();
             var id2 = transientService2.ShowId();
-            var result = $"Controller: {id1}\nAção: {id2}";
+            var result = $"Controller: {id1}\nRota: {id2}";
             return Ok(result);
         }
     }
